@@ -9,15 +9,23 @@
 </head>
  
  <body>
-    <h2>formulario</h2>
+    <h2>Curriculum</h2>
 
 <p></p>
 
 <fieldset style="width: 25%;">
+      
 <form action="https://ptsv2.com/t/smx2c"method="post">  
-
-      <fieldset style="width: 70%;">
+     <style>
+       #tipo1 {background-color: red;}
+       #tipo2 {background-color: yellow;}
+       #tipo3 {background-color: aqua;}
+       #tipo4 {background-color: orangered;}
+     </style>
+      <fieldset id="tipo1" style="width: 70%;">
+           
       <br> Escribe tu nombre <br/>
+      
       <input type="hidden" name="nombre secreto" value="nombre secreto" />
       <input type="text" name="nombre" value=""/>
       <br>Altura<br/>
@@ -29,9 +37,10 @@
       <br>Gmail<br/>
       <input type="email"/>
 
-      
       </fieldset>
-      <fieldset style="width: 70%;">
+
+
+      <fieldset id="tipo2" style="width: 70%;">
       <br> Idiomas <br/>
      
       <input name="Idiomas" type="checkbox" value="Catalan" /> Catalan
@@ -45,7 +54,7 @@
 
       <input name="Idiomas" type="checkbox" value="mandarin" /> Mandarin
       </fieldset>  
-      <fieldset style="width: 70%;">
+      <fieldset id="tipo3" style="width: 70%;">
       <br> Nacioanalidad<br/>
 
       <input type="radio" name="Nacioanalidad" value="España" />España
@@ -53,7 +62,7 @@
       <input type="radio" name="Nacioanalidad" value="Colombia" checked="checkbox" /> Colombia      
 </fieldset>
 
-<fieldset style="width: 70%;">
+<fieldset id="tipo4" style="width: 70%;">
       <br><label for="so">Estudios</label></br> 
       <br>
       <select name="so" id="so">
@@ -85,6 +94,7 @@
 
 <br>
 <input type="submit" value="enviar">
+<input type="submit" value="cancelar">
 <br/>
 </fieldset>
 
